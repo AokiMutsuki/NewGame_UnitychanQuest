@@ -90,7 +90,7 @@ void Game::Update()
     auto bosses = FindGOs<Boss>("boss");
 
     // ボスを倒したらクリア
-    if (m_player->BossCount == 1)
+    if (m_player->BossCount == 1 && m_player->EnemyCount >= 5)
     {
         NewGO<GameClear>(0, "GameClear");
         DeleteGO(this);

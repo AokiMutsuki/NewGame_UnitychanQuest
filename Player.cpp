@@ -79,6 +79,7 @@ void Player::Update()
 			if (enemy->GetHP() == 0 ) {
 		        
 				enemy->SetDead(true);//“G‚ÌŽ€–Sƒtƒ‰ƒO
+				EnemyCount++;
 				DeleteGO(enemy);
 				
 
